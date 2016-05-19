@@ -1,0 +1,487 @@
+a { 
+    text-decoration: none; 
+   } 
+
+ /*fonts*/
+	@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic);
+
+.shadow{
+		-webkit-box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.75);
+
+	}
+.invisible{
+		display: none;
+		visibility: hidden;
+	}
+html{
+		width: 100%;
+		height: 100%;
+	}
+body{
+		margin: 0px ;
+		width: 100%;
+		height: 100%;
+		background:  #C8F3F6;
+		background-size: cover;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+#wrapping {
+		max-width: 1000px;
+		height: 100%;
+		background: red;
+		margin: 0 auto;
+	}
+header{
+		 width:100%; 
+		 height: 100px;
+		 background: white;
+		 z-index: 3;
+		 position: relative;
+	}
+header .user{
+		float: right;
+		margin: 20px;
+		padding: 10px;
+	}
+header .user p{
+		float: left;
+		font-size: 13px;
+		color: grey;
+		margin-top: 43px;
+}
+header .user img{
+		width: 50px;
+		height: 50px;
+		float: left;
+		border-radius: 50px;
+		cursor: pointer;
+	}
+header input[type="password"]{
+		float: left;
+		border:0;
+		outline: 0;
+		background: #F2F7F8;
+		padding: 15px 30px;
+		width: 200px;
+		margin: 30px 0 0 80px;
+
+	}
+header img{
+		margin:25px;
+		float: left;
+	}
+
+.header{
+	width: 250px;
+	height: 30px;
+	float: left;
+	margin: -20px 0px 0px 0px;
+}
+aside{
+		width:200px;
+		height: calc(100% - 100px);
+		background: #F2F7F8;
+		float:left;
+		z-index: 2;
+		position: relative;
+	}
+	 aside ul{
+	    list-style: none;
+	    padding: 0;
+	 }
+
+	 aside ul li{
+	 	 padding: 10px;
+	}
+
+	 aside ul li:hover{
+	 	background: #9999ff;
+	 	color: white;
+	}
+	aside ul a{
+		text-decoration: none;
+	}
+	aside ul  a  li {
+		color:#848D94;
+		text-decoration: none;
+	}
+	 
+	aside #pointer{
+		cursor: pointer;
+
+	}
+	
+
+
+article{
+		width: calc(100% - 200px);
+		height: calc(100% - 100px);
+		background: white;
+		float: left;
+		z-index: 1;
+		position: relative;
+		/*overflow-y: scroll; */
+	}
+	article .name{
+		margin: 20px 0px 20px 20px;
+		font-size: 20px;	
+	}
+	article .karusel .video{
+		width: calc(25% - 45px);
+		float: left;
+		margin-left: 40px;
+		cursor: pointer;
+	}
+
+    article .karusel .video  img{
+    	width: 100%;
+    	height: 120px;
+    	border-radius: 10px;
+    }
+
+    article .karusel .video:hover{
+    	opacity: 0.3;
+     }
+    article .karusel .video p:last-child{
+    	color: grey;
+    	font-size: 12px;
+    	margin: 0 0 20px 0;
+    }
+    article .karusel .video p:nth-child(2){
+    	color:  #0000FF;  		
+    	font-size: 15px;
+    	margin: 0;
+    	
+    }
+
+    article #sovet{
+    	color: black;
+    	font-size: 14px;
+    	width: 550px;
+    	height: 40px;
+    	background: #E1E7E8;
+    	margin: 200px 0px 0px 90px;
+    	font-family: 'Roboto Condensed', sans-serif;
+	}
+	article #probel{
+		float:left;
+	}
+	article .user{
+		margin-left: 500px;
+		margin:70px 200px 50px 300px;
+	}
+
+
+
+    @media screen and (max-width: 720px){
+    	 	header #logo{
+    			float: none;
+    			margin: 0 auto;
+    			display: block;
+    			padding-top: 25px;
+ 			}
+ 			aside{
+ 				margin-left: -200px;
+			}
+			article{
+				width: 100%;
+			}
+			article .hidden{
+				visibility: hidden;
+    	    	display: none;
+			}
+			article .user{
+				margin:20px 50px 80px 100px;
+			}
+			article .name{
+				font-size: 15px;
+			}
+			
+			header #menu{
+				display: block;
+				visibility: visible;
+				width: 40px;
+				position: fixed;
+				margin: 30px;
+				cursor: pointer;
+			}
+			header .user{
+				display: none;
+				visibility: visible;
+				
+			}
+    	    aside .notes{
+    	    	visibility: hidden;
+    	    	display: none;
+    	    }
+
+
+
+
+	}
+
+
+/******  Другой сайт  About us *************/
+article .about{
+	width: 500px;
+	height: 150px;
+	background-color: #E1E7E8;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	padding: 30px 20px 30px 50px;
+	margin: 50px 0px 50px 100px;
+	}
+article #unk{
+	margin: 30px 0px 300px 0px;
+}
+@media screen and (max-width: 720px){
+	article .about{
+		width:300px;
+		height:130px;
+		font-size: 13px;
+		margin-left: 20px; 
+	}
+	article .m{
+		font-size:11px;
+	}
+	article #unk{
+	margin: 40px 0px 300px 0px;
+}
+}
+
+/********************Product***/
+article .text{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	margin: 20px 20px 20px 40px;
+	}
+article .pro{
+	width: 150px;
+	height: 10px;
+	background-color: #E1E7E8;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	padding: 20px;
+	margin: 80px 0px 0px 300px;
+	}
+article #image{
+	width: 650px;
+	height: 80px;
+	margin: 10px 50px 350px 90px;
+}
+article .another{
+	color:#2E2EFE;
+	font-size: 19px;
+}
+@media screen and (max-width: 720px){
+	article .pro{
+		width:300px;
+		height: 30px;
+		margin-left: 15px;
+	}
+	article #image{
+	width: 400px;
+	height: 80px;
+	margin-left: 35px;
+	}
+}
+
+/*************** страница здоровье **********/
+
+article .texts{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	margin: 20px 20px 20px 40px;
+	}
+article .pros{
+	width: 150px;
+	height: 10px;
+	background-color: #6BFD36;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	padding: 20px;
+	margin: 80px 0px 0px 300px;
+	}
+article #images{
+	width: 290px;
+	height: 100px;
+	margin: 10px 50px 350px 90px;
+}
+article .anothers{
+	color:#079C42;
+	font-size: 18px;
+}
+@media screen and (max-width: 720px){
+	article .pros{
+		width:300px;
+		height: 30px;
+		margin-left: 15px;
+	}
+	article #images{
+	width: 450px;
+	height: 80px;
+	margin-left: 35px;
+	}
+}
+
+/**********Тайм -менеджмент ****/
+
+article .textss{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	margin: 20px 20px 20px 40px;
+	}
+article .pross{
+	width: 250px;
+	height: 20px;
+	background-color: #F1C3E5;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	padding: 20px;
+	margin: 80px 0px 0px 300px;
+	}
+article #imagess{
+	width: 550px;
+	height: 80px;
+	margin: 10px 50px 400px 90px;
+}
+article .anotherss{
+	color:#E73EBA;
+	font-size: 18px;
+}
+@media screen and (max-width: 720px){
+	article .pross{
+		width:300px;
+		height: 30px;
+		margin-left: 15px;
+	}
+	article #imagess{
+	width: 350px;
+	height: 80px;
+	margin-left: 35px;
+	}
+}
+
+/************************COntacts**/
+article #delete{
+	width: 500px;
+	height: 100px;
+	margin:40px 0px 140px 100px;
+	padding: 50px;
+
+}
+article #ot{
+	margin: 80px;
+}
+article .bla{
+	color: #3C17A3;
+	font-size: 16px;
+}
+article .blabla{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	margin: 50px 20px 20px 40px;
+	}
+@media screen and (max-width: 720px){
+	article #delete{
+		width: 250px;
+		height: 100px;
+		margin: 10px 0px 10px 0px;
+	}
+	article #im{
+		width: 250px;
+		height: 100px;
+	}
+	article #ot{
+		margin:5px 0px 5px 30px;
+	}
+}
+
+/**************************************************************
+*****************************************************************
+*************************logout login******/
+article  .qwerty{
+	margin:50px 50px 0px 50px;
+	color: #111F55;
+	font-size: 25px;
+	}
+.form{
+	margin:0px 150px 10px 150px;
+}
+
+
+@media screen and (max-width: 720px){
+
+	article .qwerty{
+	margin:10px 30px 20px -10px;
+	font-size: 8px;
+	}
+	article #logout{
+	margin:30px 30px 3px 10px;
+	font-size: 8px;
+	}
+	article .move{
+	margin:0px 40px 100px 259px;
+	}
+	article p{
+		font-size: 18px;
+	}
+	article #ree{
+			margin:0px 0px 700px 0px;
+		}
+	article feer{
+		width: 500px;
+		height: 900px;
+		position: absolute;
+    	bottom: 8px;
+    	left: 16px;
+    	font-size: 18px;
+	}
+
+}
+
+@media screen and (max-width: 720px){
+		article #ret{
+			margin:20px 40px 200px 5px;
+			position: absolute;
+    		top: 300px;
+    		right: 16px;
+    		font-size: 18px;
+
+		}
+		
+}
+/********************************************************
+*********************************************************
+*********************************************************
+*********************************************************
+*********************************************************/
+
+
+/********************************************************************
+*********************************************************************
+************************************************************************8
+**************************************************************************/
+div #be{
+  	color:#0860DE;
+ 	margin: -80px 0px 0px 250px;
+	font-size: 20px;
+	}
+.todom{
+	margin: 0px 0px 0px 300px;
+}
+.notes{
+		color: #000080;
+		padding: -5px 10px 0px 50px;
+		margin:0px 0px 0px -150px; 
+		font-size: 14px;
+		width: 600px;
+		height: 220px;
+		background-color:  #9AD2D7; 
+	}
+.asd{
+	margin: -166px -5px 0px -5px;
+	width: 400px;
+}
